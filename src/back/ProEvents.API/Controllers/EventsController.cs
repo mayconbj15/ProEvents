@@ -6,12 +6,12 @@ namespace ProEvents.API.Controllers;
 
 [ApiController]
 [Route("/api/[controller]")]
-public class EventController : ControllerBase
+public class EventsController : ControllerBase
 {
     private readonly DataContext _context;
-    private readonly ILogger<EventController> _logger;
+    private readonly ILogger<EventsController> _logger;
 
-    public EventController(DataContext context, ILogger<EventController> logger)
+    public EventsController(DataContext context, ILogger<EventsController> logger)
     {
         _context = context;
         _logger = logger;
