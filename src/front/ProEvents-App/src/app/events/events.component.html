@@ -1,4 +1,46 @@
-<p>events works!</p>
+<h1>Eventos</h1>
+<hr>
+
+<!-- form.form-inline>.form-group.mb-2 -->
+<form class="row row-cols-lg-auto g-3 align-items-center mb-3">
+  <div class="col-12">
+    <label class="visually-hidden" for="inlineFormInputGroupUsername">Buscar</label>
+    <div class="input-group">
+      <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+    </div>
+  </div>
+
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Buscar</button>
+  </div>
+</form>
+
+<table class="table table-stripped">
+  <thead class="table-dark">
+    <tr>
+      <th>#</th>
+      <th>Imagem</th>
+      <th>Tema</th>
+      <th>Local</th>
+      <th>Data</th>
+      <th>Qtd Pessoas</th>
+      <th>Lote</th>
+      <th>Opções</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 <div *ngFor="let event of events">
   <p>{{event.theme}}</p>
