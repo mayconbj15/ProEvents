@@ -10,10 +10,10 @@ export class EventsComponent {
   public events: any;
 
   constructor(private httpClient: HttpClient){
-    this.getEvents();
+    this.initializeEvents();
   }
 
-  public getEvents(): any {
+  public initializeEvents(): any {
     this.httpClient.get('http://localhost:5289/api/events').subscribe(
       response => this.events = response,
       error => console.error(error)

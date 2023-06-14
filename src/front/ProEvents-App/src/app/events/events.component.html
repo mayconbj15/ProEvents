@@ -29,20 +29,15 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+    <tr *ngFor="let event of events">
+      <td>{{event.id}}</td>
+      <td>{{event.imageURL}}</td>
+      <td>{{event.theme}}</td>
+      <td>{{event.location}}</td>
+      <td>{{event.capacity}}</td>
+      <td>Undefined</td>
+      <td>Undefined</td>
+      <td>Undefined</td>
     </tr>
   </tbody>
 </table>
-
-<div *ngFor="let event of events">
-  <p>{{event.theme}}</p>
-  <p>{{event.location}}</p>
-</div>
